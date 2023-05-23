@@ -31,33 +31,39 @@ int main() {
         scanf(" %c", &tipo);
 
 
-        if(tipo == '-'){
-        while(numero1 != numero2) {
-
-            if (numero1 > numero2) {
-                printf("%d \n", numero2);
-                numero2++;
-            }else if (numero1 < numero2) {
-                printf("%d \n", numero1);
-                numero1++;
-            }
-        }
-        printf("%d \n", numero2);
-            printf("acabou \n");
-            } else if (tipo == '+') {
+        if(tipo == '-') {
             while(numero1 != numero2) {
 
-            if (numero1 > numero2) {
-                printf("%d \n", numero1);
-                numero1--;
-            }else if (numero1 < numero2) {
-                printf("%d \n", numero2);
-                numero2--;
+                if (numero1 > numero2) {
+                    printf("%d \n", numero2);
+                    numero2++;
+                } else if (numero1 < numero2) {
+                    printf("%d \n", numero1);
+                    numero1++;
+                }
             }
-        }
-        printf("%d \n", numero2);
+            printf("%d \n", numero2);
             printf("acabou \n");
+        } else if (tipo == '+') {
+            while(numero1 != numero2) {
+
+                if (numero1 > numero2) {
+                    printf("%d \n", numero1);
+                    numero1--;
+                } else if (numero1 < numero2) {
+                    printf("%d \n", numero2);
+                    numero2--;
+                }
             }
+            printf("%d \n", numero1);
+        }
+        else {
+            printf("Algo deu errado porfavor tente novamente e lembre de usar '+' ou '-' ao \n selecionar a ordem e de nao usar numeros iguais \n");
+        }
+
+
+
+        printf("acabou \n");
 
         // ---->final<----
 

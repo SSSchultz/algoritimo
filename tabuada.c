@@ -34,11 +34,7 @@ void main() {
             multiplicando++;
             multiplicador = 0;
 
-            printf("%d x %d = %d \n", multiplicando, multiplicador, produto);
-
         }
-
-
 
 
         // ---->final<----
